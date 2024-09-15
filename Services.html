@@ -191,16 +191,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-       var MessageText = "<?= $_SESSION['status'] ?? ''; ?>";
 
-        if (MessageText != '') { 
-        Swal.fire({
-     title: "Thank you we receive your Message",
-     text: "Message Successfuly",
-     icon: "Success"
-  });
-        <?php unset($_SESSION['status']); ?>
-}
 </script>
 </body>
 </html>
